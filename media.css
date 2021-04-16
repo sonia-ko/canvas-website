@@ -1,0 +1,51 @@
+/*Default CSS layout for narrow screens*/
+
+@media (max-width: 480px) {
+  /*CSS for medium width screens*/
+    html{
+        background-color: darkblue;
+    }
+    
+    h1{
+        color: white;
+    }
+    
+    nav ul{
+    font-size:0.8em;
+    align-content: center;
+}
+li a{
+    text-decoration: none;
+    padding: 2vw 2vw 2vw;
+    margin: 0 auto;
+
+}
+    
+    .columns{
+        display:block;
+    
+    }
+    .column{
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+  /*CSS for wide screens*/
+    html{
+       background-color: coral;
+    }
+    h1{
+        color: blueviolet;
+    }
+}
+
+@media (max-width: 1000px) {
+  /*CSS for wide screens*/
+    html{
+       background-color: coral;
+    }
+    h1{
+        color: blueviolet;
+    }
+}

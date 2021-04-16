@@ -1,0 +1,252 @@
+/*Page setup*/
+
+html {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  max-width: 100%;
+  background-color: white;
+}
+
+body {
+  max-width: 100%;
+  margin: 0;
+}
+
+/*Header*/
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+/*Menu*/
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3em;
+}
+li a {
+  text-decoration: none;
+  padding: 1vw 1.5vw 1vw;
+  margin: 0 auto;
+}
+li a:hover {
+  text-decoration: underline;
+}
+
+/*Hero blockfor main page*/
+
+header {
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.6) 100%,
+      rgba(255, 255, 255, 0.6) 100%
+    ),
+    url(img/orchid.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  line-height: 1;
+  font-size: 8vw;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.15vw;
+  width: 90%;
+}
+
+header h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.42;
+}
+
+/*paragraph-section*/
+
+.paragraph-section {
+  width: 60%;
+  margin: 0 auto;
+  padding: 1.5vw 0 3vw 0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3.3em;
+  font-weight: 100;
+  margin-bottom: 0.03vw;
+  letter-spacing: 0.01em;
+}
+
+p {
+  text-align: center;
+  font-size: 1.15em;
+}
+
+/*section consisting of 3 columns*/
+
+.columns-section {
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.75) 100%,
+      rgba(255, 255, 255, 0.65) 100%
+    ),
+    url(img/flower2.jpg);
+  background-size: cover;
+  padding: 4vw 0 2vw 0;
+}
+
+.columns {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+h4 {
+  color: white;
+  font-size: 2em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.column {
+  width: 30%;
+}
+h4 + p {
+  color: white;
+  text-align: left;
+  font-size: 1.1em;
+  margin: 1vw auto;
+  font-weight: 500;
+}
+
+/*Section with the paragraph on the right*/
+.right-paragraph-section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3vw 0 2vw 0;
+}
+.right-heading {
+  color: black;
+  font-weight: 500;
+}
+.right-heading + p {
+  color: black;
+}
+
+/*Contact form*/
+.contact-form {
+  width: 100%;
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.5) 100%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    url(img/flower4.jpg);
+  background-size: cover;
+  padding: 2vw 0 2vw 0;
+}
+
+.form-wrapper {
+  width: 45%;
+  margin: 0.7vw auto;
+}
+
+.name-email {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 0 1vw 0;
+}
+
+.form-unit {
+  width: 47%;
+}
+
+input {
+  width: 100%;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: 1.3333333;
+  padding: 0.7vw 0 0.7vw 1vw;
+}
+
+.name-email + textarea {
+  padding: 3vw;
+}
+
+textarea {
+  height: 17vw;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.7vw;
+  width: 99.5%;
+}
+
+.form-header {
+  color: white;
+  font-size: 3.5em;
+  margin: 1vw auto;
+  text-align: center;
+}
+
+button {
+  display: block;
+  font-size: 1.3em;
+  font-family: inherit;
+  line-height: 1.3333333;
+  margin: 0.3vw auto;
+  border: 1px solid black;
+  padding: 0.7vw 1vw 0.7vw 1vw;
+}
+
+button:hover {
+  background-color: #221c26;
+  color: aliceblue;
+}
+
+/* MAILING LIS SECTION */
+.mailing-list {
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.6) 100%,
+      rgba(255, 255, 255, 0.6) 100%
+    ),
+    url(img/pink-flowers-blooming-on-branches-CAVF25998.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.mailing-list input {
+  width: 80%;
+  font-size: 1.33rem;
+  height: 2rem;
+}
+
+.email-input-form {
+  width: 50%;
+}
