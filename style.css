@@ -15,7 +15,8 @@ body {
 }
 
 /*Header*/
-.header {
+.header,
+.small-header-container {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -56,6 +57,9 @@ header {
   align-items: center;
   justify-content: center;
   max-width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 header h1 {
@@ -110,6 +114,9 @@ p {
     url(img/flower2.jpg);
   background-size: cover;
   padding: 4vw 0 2vw 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .columns {
@@ -162,6 +169,9 @@ h4 + p {
     url(img/flower4.jpg);
   background-size: cover;
   padding: 2vw 0 2vw 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .form-wrapper {
@@ -187,6 +197,8 @@ input {
   font-family: inherit;
   line-height: 1.3333333;
   padding: 0.7vw 0 0.7vw 1vw;
+  background-color: rgba(254, 242, 255, 0.8);
+  border: none;
 }
 
 .name-email + textarea {
@@ -199,6 +211,8 @@ textarea {
   font-family: inherit;
   padding: 0.7vw;
   width: 99.5%;
+  border: none;
+  background-color: rgba(254, 242, 255, 0.8);
 }
 
 .form-header {
@@ -216,6 +230,7 @@ button {
   margin: 0.3vw auto;
   border: 1px solid black;
   padding: 0.7vw 1vw 0.7vw 1vw;
+  border: none;
 }
 
 button:hover {
@@ -230,23 +245,50 @@ button:hover {
       rgba(2, 0, 36, 0.6) 100%,
       rgba(255, 255, 255, 0.6) 100%
     ),
-    url(img/pink-flowers-blooming-on-branches-CAVF25998.jpg);
+    url(img/bouqet-m.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   max-width: 100%;
 }
-
-.mailing-list input {
+.mailing-list-container {
   width: 80%;
-  font-size: 1.33rem;
-  height: 2rem;
+  margin: 0 auto;
 }
 
-.email-input-form {
+.email-input-form input {
+  width: 52vh;
+  background-color: rgba(254, 242, 255, 0.8);
+}
+
+.email-input-form button {
+  display: inline-block;
+  font-size: 1rem;
+  background-color: rgba(254, 242, 255, 0.8);
+  border: none;
+}
+/* SMALL HEADER */
+
+.small-header {
+  height: 60vh;
+}
+
+.small-header-container {
+  height: 65vh;
+}
+/*contacts*/
+
+.contacts-section-1 {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5vh;
+  display: flex;
+}
+
+.contacts-section-1 iframe {
   width: 50%;
+  height: 50vh;
 }
