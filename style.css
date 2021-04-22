@@ -51,8 +51,8 @@ li a:hover {
 header {
   background-image: linear-gradient(
       90deg,
-      rgba(2, 0, 36, 0.6) 100%,
-      rgba(255, 255, 255, 0.6) 100%
+      rgba(2, 0, 36, 0.35) 100%,
+      rgba(255, 255, 255, 0.3) 100%
     ),
     url(img/orchid.jpg);
   background-repeat: no-repeat;
@@ -124,8 +124,8 @@ p {
 .columns-section {
   background-image: linear-gradient(
       90deg,
-      rgba(2, 0, 36, 0.75) 100%,
-      rgba(255, 255, 255, 0.65) 100%
+      rgba(2, 0, 36, 0.7) 100%,
+      rgba(255, 255, 255, 0.3) 100%
     ),
     url(img/flower2.jpg);
   background-size: cover;
@@ -179,8 +179,8 @@ h4 + p {
   width: 100%;
   background-image: linear-gradient(
       90deg,
-      rgba(2, 0, 36, 0.5) 100%,
-      rgba(255, 255, 255, 0.5) 100%
+      rgba(2, 0, 36, 0.35) 100%,
+      rgba(255, 255, 255, 0.4) 100%
     ),
     url(img/flower4.jpg);
   background-size: cover;
@@ -258,8 +258,8 @@ button:hover {
 .mailing-list {
   background-image: linear-gradient(
       90deg,
-      rgba(2, 0, 36, 0.6) 100%,
-      rgba(255, 255, 255, 0.6) 100%
+      rgba(2, 0, 36, 0.5) 100%,
+      rgba(255, 255, 255, 0.5) 100%
     ),
     url(img/bouqet-m.jpg);
   background-repeat: no-repeat;
