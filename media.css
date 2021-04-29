@@ -1,51 +1,95 @@
 /*Default CSS layout for narrow screens*/
 
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
   /*CSS for medium width screens*/
-    html{
-        background-color: darkblue;
-    }
-    
-    h1{
-        color: white;
-    }
-    
-    nav ul{
-    font-size:0.8em;
-    align-content: center;
-}
-li a{
-    text-decoration: none;
-    padding: 2vw 2vw 2vw;
-    margin: 0 auto;
-
-}
-    
-    .columns{
-        display:block;
-    
-    }
-    .column{
-        width: 100%;
-    }
 }
 
 @media (max-width: 800px) {
-  /*CSS for wide screens*/
-    html{
-       background-color: coral;
-    }
-    h1{
-        color: blueviolet;
-    }
+  /*MENU*/
+  .menu {
+    display: none;
+  }
+  .side-menu {
+    display: block;
+    padding-right: 2vh;
+    padding-top: 2vh;
+    display: flex;
+    align-self: flex-end;
+  }
+  .menu-container {
+    cursor: pointer;
+    display: inline-block;
+  }
+  .menu-icon-bar {
+    width: 2.3rem;
+    height: 0.3rem;
+    background-color: black;
+    margin: 0.45rem 0;
+    transition: 0.4s;
+  }
+
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 9px);
+    transform: rotate(-45deg) translate(-9px, 9px);
+  }
+
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -9px);
+    transform: rotate(45deg) translate(-9px, -9px);
+  }
+
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    font-size: 2rem;
+    background-color: #a18bad;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 5rem; /* Place content from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #dedfff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #acaee3;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    font-size: 5rem;
+    margin-left: 4rem;
+  }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left 0.5s;
+    padding: 1.5rem;
+  }
 }
 
-@media (max-width: 1000px) {
-  /*CSS for wide screens*/
-    html{
-       background-color: coral;
-    }
-    h1{
-        color: blueviolet;
-    }
+@media (max-width: 420px) {
 }

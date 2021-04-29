@@ -24,6 +24,9 @@ body {
 }
 
 /*Menu*/
+.side-menu {
+  display: none;
+}
 
 nav ul {
   list-style-type: none;
@@ -353,4 +356,118 @@ button:hover {
 .text h3 {
   font-size: 1.5rem;
   text-align: left;
+}
+
+/* SLIDER */
+/* SLIDER */
+.slider {
+  width: 80%;
+  height: 35rem;
+  margin: 0 auto;
+  position: relative;
+
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 35rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slider-section p {
+  width: 80%;
+  margin: 5vh auto;
+}
+
+button div {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.slide > img {
+  /* Only for images that have different size than slide */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  display: block;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+[class^="dots__dot"] {
+  border: none;
+  background-color: #fcf7ff;
+  opacity: 0.7;
+  height: 3vh;
+  width: 3vh;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+[class^="dots__dot"]:last-child {
+  margin: 0;
+}
+
+[class^="dots__dot--active"],
+.dots__dot--active {
+  /* background-color: #fff; */
+  background-color: #665370;
+  opacity: 1;
 }

@@ -3,6 +3,10 @@ const menu = document.querySelector("nav");
 const navHeight = menu.getBoundingClientRect().height;
 const header = document.querySelector("header");
 const allSections = document.querySelectorAll(".section");
+const menuIcon = document.querySelector(".menu-container");
+const closeMenuBtn = document.querySelector(".close-menu-btn");
+let menuOpened = false;
+const sideNavigation = document.querySelector(".sidenav");
 
 //sticky navigation
 const stickyNav = function (entries) {
@@ -22,7 +26,6 @@ headerObserver.observe(header);
 
 // menu fade animation
 const handleHover = function (e) {
-  console.log(e.target);
   if (e.target.hasAttribute("href")) {
     const link = e.target;
     const siblings = link.closest("ul").querySelectorAll("a[href]");
@@ -56,3 +59,27 @@ allSections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section-hidden");
 });
+
+// Hamburger menu
+
+// a user opens the menu icon
+menuIcon.addEventListener("click", function () {
+  if (menuOpened === false) {
+    document.getElementById("mySidenav").style.width = "50%";
+    document.getElementById("main").style.marginLeft = "50%";
+    menuOpened = true;
+    menuIcon.classList.toggle("change");
+  } else {
+    closeNav();
+  }
+});
+
+closeMenuBtn.addEventListener("click", closeNav);
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  menuOpened = false;
+  menuIcon.classList.toggle("change");
+}
